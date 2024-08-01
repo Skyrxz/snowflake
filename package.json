@@ -1,0 +1,36 @@
+{
+  "name": "snowflake",
+  "productName": "Snowflake",
+  "version": "1.0.0",
+  "description": "My Electron application description",
+  "main": "src/index.js",
+  "icon": "src/assets/images/logo.ico",
+  "scripts": {
+    "start": "electron-forge start",
+    "tailwind": "npx tailwindcss -i ./src/tailwind.css -o ./src/index.css --watch",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.4.0",
+    "@electron-forge/maker-deb": "^7.4.0",
+    "@electron-forge/maker-rpm": "^7.4.0",
+    "@electron-forge/maker-squirrel": "^7.4.0",
+    "@electron-forge/maker-zip": "^7.4.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.4.0",
+    "@electron-forge/plugin-fuses": "^7.4.0",
+    "@electron/fuses": "^1.8.0",
+    "electron": "31.2.1",
+    "tailwindcss": "^3.4.6"
+  },
+  "keywords": [],
+  "author": "user",
+  "license": "MIT",
+  "dependencies": {
+    "@kirillvakalov/nut-tree__nut-js": "^4.2.1-2",
+    "electron-squirrel-startup": "^1.0.1",
+    "gkm": "^0.2.0"
+  }
+}

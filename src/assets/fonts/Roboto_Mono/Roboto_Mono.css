@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Roboto Mono";
+    src: url("./RobotoMono-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Mono Italic";
+    src: url("./RobotoMono-Italic-VariableFont_wght.ttf");
+}

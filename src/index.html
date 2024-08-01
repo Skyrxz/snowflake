@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Snowflake</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./designcss/toggle.css" />
+    <link rel="stylesheet" href="./designcss/slider.css" />
+    <link rel="stylesheet" href="./assets/fonts/Poppins/Poppins.css" />
+    <link rel="stylesheet" href="./assets/fonts/Roboto_Mono/Roboto_Mono.css" />
+    <script src="render.js" defer></script>
+  </head>
+  <body class="bg-white font-poppins font-medium h-full w-full">
+    <div class="h-full">
+      <header class="h-20 flex items-center justify-center w-full">
+        <div class="[-webkit-app-region:_drag;] [background-image:url('./assets/images/logo.png');] [background-position:center;] [background-size:cover;] h-20 w-20 rounded-md cursor-grab"></div>
+        <div class="flex gap-4 absolute right-8 top-5 z-20">
+          <button id="minimize" class="title-btn">-</button>
+          <button id="close" class="title-btn">×</button>
+        </div>
+      </header>
+      <main class="p-2 px-8 h-full">
+        <div class="h-full font-bold">
+          <div class="flex justify-around h-full">
+            <div class="h-full flex flex-col gap-4">
+              <div class="flex gap-2 items-center">
+                <label class="switch">
+                  <input id="toggle" type="checkbox">
+                  <span class="slider"></span>
+                </label>
+                <span class="text-sm">toggle cps multiplier</span>
+              </div>
+              <div class="flex gap-12">
+                <div class="flex gap-4 items-center">
+                  <div class="wrapper">
+                    <input type="range" id="chance" min="0" max="100" value="50" />
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <span class="text-xl font-bold">chance</span>
+                    <span class="text-sm font-bold" id="chance_label">50%</span>
+                  </div>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <div class="wrapper">
+                    <input type="range" id="delay" min="4" max="100" value="50" />
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <span class="text-xl font-bold">delay</span>
+                    <span class="text-sm font-bold" id="delay_label">50 ms</span>
+                  </div>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <div class="wrapper">
+                    <input type="range" id="activation_cps" min="1" max="7" value="5" />
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <span class="text-xl font-bold leading-4"><span class="text-xs">activation</span> cps</span>
+                    <span class="text-sm font-bold" id="activation_cps_label">5 cps</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-slate-400 rounded-md w-40 h-full">
+
+            </div>
+          </div>
+          <div class="absolute bottom-4 left-4 text-xs font-poppins text-slate-400">
+            <div>
+              <span id="cps_input" class="font-roboto-mono">0</span> cps input
+            </div>
+            <div>
+              <span id="cps_output" class="font-roboto-mono">0</span> cps output
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

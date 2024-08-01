@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    @apply uppercase select-none [box-sizing:border-box];
+}
+
+.title-btn {
+    @apply h-8 w-8 border-2 rounded-md border-slate-300 text-slate-500 flex justify-center items-center font-extrabold transition-colors hover:bg-slate-500 hover:bg-opacity-25 duration-500 cursor-pointer [-webkit-app-region:no_drag;];
+}
+
+.font-poppins {
+    font-family: "Poppins", sans-serif;
+}
+
+.font-roboto-mono {
+    font-family: "Roboto Mono", monospace;
+}
